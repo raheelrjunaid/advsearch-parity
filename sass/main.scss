@@ -1,0 +1,87 @@
+@import "utilities";
+
+$light-gray: #555;
+
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }  
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Product Sans, sans-serif;
+}
+body {
+    background: black;
+}
+.container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
+.top-bar {
+    background: $light-gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    font-family: Roboto;
+    border: 2px white solid;
+    background: none;
+    outline: none;
+    opacity: 0.8;
+    transition: 0.2s ease-out;
+    border-radius: 20px;
+    line-height: 2;
+    padding: 0 10px;
+    &:focus {
+        opacity: 1;
+    }
+}
+#submit {
+    background: #2278C7;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 1;
+    border: none;
+    padding: 5px 0px;
+    align-self: flex-end;
+    cursor: pointer;
+    font-family: Product Sans;
+    &:active {
+        opacity: 0.9;
+    }
+}
+label {
+    opacity: 0.8;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+button {
+    background: #2278C7;
+}
+footer {
+    background: $light-gray;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 5px white solid;
+}
