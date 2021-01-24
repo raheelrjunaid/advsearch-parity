@@ -1,3 +1,2 @@
-# Fake-Google
-
-This is a spin off of Google's Advanced Search Page.
+# Google Advanced-Search Parity
+This repository stores some Sass and HTML for a dark mode advanced search page.
